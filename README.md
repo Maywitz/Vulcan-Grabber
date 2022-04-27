@@ -1,4 +1,6 @@
 ```
+It would be nice if you take 10 seconds to star this repository and follow me ong ithub!! <3
+
 Made for educational purposes only :)
 
 I hold no responsibility for anything that you do using this project so... :(
