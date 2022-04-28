@@ -1,5 +1,5 @@
 ```
-It would be nice if you take 10 seconds to star this repository and follow me ong ithub!! <3
+It would be nice if you take 10 seconds to star this repository and follow me on github!! <3
 
 Made for educational purposes only :)
 
@@ -9,10 +9,10 @@ If you're a discord employee... uhhh hi ig 👋
 
 [IMPORTANT ⚠️ READ BELOW!!!]
 
-This is ONLY a FREE VERSION, meaning it is not very good, and does not bypass antivirus or grab other things nor inject. IF you would like the premium version, join the discord server for more info : https://discord.gg/dWsEDuGByY
+This is ONLY a FREE VERSION, meaning it is not very good, and does not bypass antivirus or grab other things nor inject. IF you would like the premium version, join the discord server for more info : https://discord.gg/qxt6aC8U2F
 ```
 
-If you need help just join the [discord server](https://discord.gg/8TfaWhM2jr) at https://discord.gg/8TfaWhM2jr
+If you need help just join the [discord server](https://discord.gg/qxt6aC8U2F) at https://discord.gg/qxt6aC8U2F
 
 # What it grabs
 
@@ -25,7 +25,7 @@ Screenshot
 
 # FAQ
 
-No, this token grabber does not bypass antivirus, the premium version does, join the discord server at https://discord.gg/8TfaWhM2jr for more info.
+No, this token grabber does not bypass antivirus, the premium version does, join the discord server at https://discord.gg/qxt6aC8U2F for more info.
 
 Yes, this token grabber bypasses token protector and betterdiscord.
 
