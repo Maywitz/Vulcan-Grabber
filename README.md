@@ -1,5 +1,8 @@
+<a href="https://discord.gg/qxt6aC8U2F" target="_blank"><img src="https://discordapp.com/api/guilds/883778761999405107/widget.png?style=banner2" alt="Script X"/></a>
+
 ```
-It would be nice if you take 10 seconds to star this repository and follow me on github!! <3
+Join the discord server for premium version(undetected, grabs more)
+AND a qr-code token logger
 
 Made for educational purposes only :)
 
