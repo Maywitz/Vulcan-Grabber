@@ -1,5 +1,3 @@
-<a href="https://discord.gg/qxt6aC8U2F" target="_blank"><img src="https://discordapp.com/api/guilds/883778761999405107/widget.png?style=banner2" alt="Script X"/></a>
-
 ```
 __      ___    _ _      _____          _   _ 
 \ \    / / |  | | |    / ____|   /\   | \ | |
@@ -8,6 +6,8 @@ __      ___    _ _      _____          _   _
    \  /  | |__| | |___| |____ / ____ \| |\  |
     \/    \____/|______\_____/_/    \_\_| \_|
 ```
+
+<a href="https://discord.gg/qxt6aC8U2F" target="_blank"><img src="https://discordapp.com/api/guilds/883778761999405107/widget.png?style=banner2" alt="Script X"/></a>
 
 https://discord.gg/qxt6aC8U2F
 
