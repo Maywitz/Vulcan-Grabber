@@ -22,6 +22,8 @@ If you're a discord employee... uhhh hi ig 👋
 [IMPORTANT ⚠️ READ BELOW!!!]
 
 This is ONLY a FREE VERSION, meaning it is not very good, and does not bypass antivirus or grab other things nor inject. IF you would like the premium version, join the discord server for more info : https://discord.gg/qxt6aC8U2F
+
+This code is unlicensed, meaning you are not allowed to reproduce, distribute, or produce derivative works with this code.
 ```
 
 If you need help just join the [discord server](https://discord.gg/qxt6aC8U2F) at https://discord.gg/qxt6aC8U2F
