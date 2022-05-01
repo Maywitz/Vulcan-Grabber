@@ -12,8 +12,7 @@ __      ___    _ _      _____          _   _
 https://discord.gg/qxt6aC8U2F
 
 ```
-Join my discord server above for support and new projects!
-Join the discord server for premium version(undetected, grabs more)
+Join my discord server above for support and access to new projects! such as premium version(undetected, grabs more)
 AND a qr-code token logger
 
 Made for educational purposes only :)
