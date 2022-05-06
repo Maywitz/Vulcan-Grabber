@@ -1,3 +1,4 @@
+python -m pip install -r requirements.txt
 @echo off
 color 0a
 echo.
